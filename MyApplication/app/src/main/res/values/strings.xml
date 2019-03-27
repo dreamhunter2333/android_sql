@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">车牌数据库</string>
+    <string name="sql_add">数据库地址</string>
+    <string name="user_name">用户名</string>
+    <string name="user_pass">密码</string>
+    <string name="sql_name">数据库名称</string>
+    <string name="sql_table">表名称</string>
+    <string name="sql_key">查询关键字</string>
+    <string name="sql_key1">关键字查询</string>
+    <string name="sql_key2">全部查询</string>
+    <string name="sql_key3">清空</string>
+
+</resources>
