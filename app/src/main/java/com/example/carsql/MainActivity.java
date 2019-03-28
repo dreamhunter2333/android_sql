@@ -131,8 +131,16 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectDiskReads().detectDiskWrites().detectNetwork().penaltyLog().build());
         String[] out2 = new String[1000];
         int[] count2 = new int[10];
+        sql.select2(out2, count2, inputText, inputText1, inputText2, inputText3, inputText4, inputText5);
+        String s = "" ;
+        String l = "--------------------------------------------------------------------------------------------\n";
+        int j = count2[0];
+        while (j>=0){
+            s = s + l + out2[j];
+            j--;
+        }
         TextView text = (TextView) findViewById(R.id.textView7);
-        text.setText("关键词查询");
+        text.setText("关键词查询"+s);
         text.setMovementMethod(ScrollingMovementMethod.getInstance());
     }
     public void click2(View v){
