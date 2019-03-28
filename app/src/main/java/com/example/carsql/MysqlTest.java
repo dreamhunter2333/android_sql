@@ -99,7 +99,9 @@ public class MysqlTest {
             System.out.println(" 实例化Statement对象...");
             stmt = conn.createStatement();
             String sql;
-            sql = "select * from "+ TABLENAME + " where TEXT1 like '%"+ CARPLA +"%' ";
+            sql = "select * from "+ TABLENAME + " where TEXT1 like '%"+ CARPLA +"%' "+
+                    "or TEXT2 like '%"+ CARPLA +"%' or COLOR1 like '%"+ CARPLA +"%'"+
+                    "or COLOR2 like '%"+ CARPLA +"%' or API like '%"+ CARPLA +"%'";
             System.out.println(sql);
             ResultSet rs = stmt.executeQuery(sql);
             System.out.println(rs);

@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             j--;
         }
         TextView text = (TextView) findViewById(R.id.textView7);
-        text.setText("关键词查询"+s);
+        text.setText(s);
         text.setMovementMethod(ScrollingMovementMethod.getInstance());
     }
     public void click2(View v){
