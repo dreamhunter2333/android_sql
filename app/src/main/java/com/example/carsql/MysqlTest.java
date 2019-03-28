@@ -7,15 +7,16 @@ public class MysqlTest {
     // JDBC 驱动名及数据库 URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 
-    public static void select(String[] out, int[] count, String DB_URL, String USER, String PASS) {
+    public static void select(String[] out, int[] count, String DB_URL1, String USER, String PASS,
+                              String DB_URL2, String DB_table) {
         Connection conn = null;
         Statement stmt = null;
 
-        DB_URL = "jdbc:mysql://"+"192.168.2.100"+":3306/"+"chepai";
+        String DB_URL = "jdbc:mysql://"+DB_URL1+":3306/"+DB_URL2;
 
         // 数据库的用户名与密码，需要根据自己的设置
-        USER = "python";
-        PASS = "Python12345@";
+//        USER = "python";
+//        PASS = "Python12345@";
         try{
             // 注册 JDBC 驱动
             Class.forName("com.mysql.jdbc.Driver");
