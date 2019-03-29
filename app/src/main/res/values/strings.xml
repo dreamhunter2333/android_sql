@@ -9,5 +9,6 @@
     <string name="sql_key1">关键字查询</string>
     <string name="sql_key2">全部查询</string>
     <string name="sql_key3">清空</string>
+    <string name="welcome">欢迎使用车牌查询</string>
 
 </resources>
