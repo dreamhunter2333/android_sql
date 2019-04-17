@@ -145,15 +145,20 @@ public class MainActivity extends AppCompatActivity {
     }
     public void click2(View v){
         EditText editText=(EditText)findViewById(R.id.editText3);
-        editText.setText("192.168.2.100");
+        editText.setText("");
+//        editText.setText("192.168.2.100");
         EditText editText1=(EditText)findViewById(R.id.editText5);
-        editText1.setText("python");
+        editText1.setText("");
+//        editText1.setText("python");
         EditText editText2=(EditText)findViewById(R.id.editText6);
-        editText2.setText("Python12345@");
+        editText2.setText("");
+//        editText2.setText("Python12345@");
         EditText editText3=(EditText)findViewById(R.id.editText7);
-        editText3.setText("chepai");
+        editText3.setText("");
+//        editText3.setText("chepai");
         EditText editText4=(EditText)findViewById(R.id.editText8);
-        editText4.setText("CARINFO");
+        editText4.setText("");
+//        editText4.setText("CARINFO");
         EditText editText5=(EditText)findViewById(R.id.editText9);
         editText5.setText("");
 
